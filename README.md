@@ -2,13 +2,14 @@
 
 We've made it! You're ready to built a React application! Before you start ideating, think about some of the project requirements. Some ideas (games) may not work well for this project. 
 
-### Requirments
+### Requirements
 
-1. You must use a Rails API backend with a separate React front-end.
+1. You must use a Rails API backend with a separate React front end.
 2. Your backend must have at least one resource. 
 3. Your application must have full CRUD actions for at least one resource. 
 4. __Optional:__ Your application can have authentication/authorization. (**reminder use the auth template**)
 5. Modularize your application into seperate files and folders based on purpose of code. 
+6. Any calls to 3rd-party APIs must be made through your back end.
 
 #### Bonus
 1. Implement a new node package you have never used. (Socket.io, Chart.js, Draggable.js)
