@@ -20,7 +20,7 @@ We've made it! You're ready to built a React application! Before you start ideat
 
 Your apps should live in separate repositories. This means you will have two separate repos. 
 
-1. You should generate your API using the following command: `rails new my-project-api --api -T` 
+1. You should generate your API using the following command: `rails new my-project-api --api -T --database=postgresql`. (Setting your database up as Postgres initially will make deployment easier at a later stage.) 
 2. To create your React project, you may use a tool called [create-react-app](https://github.com/facebookincubator/create-react-app), an awesome project generator developed by Facebook. To use this
 	+ `npm install -g create-react-app` - this installs the generator as a global package
 	+ In the directory where you'd like to create your project, `create-react-app my-project-client`. It's that simple! 
