@@ -7,23 +7,10 @@ We've made it! You're ready to built a React application! Before you start ideat
 1. You must use a Rails API backend with a separate React front end.
 2. Your backend must have at least one resource. 
 3. Your application must have full CRUD actions for at least one resource. 
-4. __Optional:__ Your application can have authentication/authorization. (**reminder use the auth template**)
-5. Modularize your application into seperate files and folders based on purpose of code. 
-6. Any calls to 3rd-party APIs must be made through your back end.
-7. Prepare a video demo (narration helps!) describing how a user would interact with your working project.
-    * The video should:
-      - Have an overview of your project.(2 minutes max)
-8. Prepare a presentation to follow your video.(3 minutes max)
-    * Your presentation should:
-      - Describe something you struggled to build, and show us how you ultimately implemented it in your code.
-      - Discuss 3 things you learned in the process of working on this project.
-      - Address, if anything, what you would change or add to what you have today?
-      - Present any code you would like to highlight.
-      
-#### Bonus
-1. Implement a new node package you have never used. (Socket.io, Chart.js, Draggable.js)
-2. Refactor your code using HOCs.
-3. Go above and beyond in styling for animations and transitions.
+4. Modularize your application into seperate files and folders based on purpose of code. 
+5. Any calls to 3rd-party APIs must be made through your back end.
+6. __Optional:__ Your application can have authentication/authorization. (**reminder use the auth template**)
+
 
 ### Setup
 
