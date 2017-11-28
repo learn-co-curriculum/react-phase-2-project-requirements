@@ -1,18 +1,43 @@
 # React Project! 
 
-We've made it! You're ready to built a React application! Before you start ideating, think about some of the project requirements. Some ideas (games) may not work well for this project. 
+You've made it! You're ready to build a React application! Before you start ideating, think about some of the project requirements. 
 
 ### Requirements
 
-1. You must use a Rails API backend with a separate React front end.
-2. Your backend must have at least one resource. 
-3. Your application must have full CRUD actions for at least one resource. 
-4. Modularize your application into seperate files and folders based on purpose of code. 
-5. Any calls to 3rd-party APIs must be made through your back end.
-6. __Optional:__ Your application can have authentication/authorization. (**reminder use the auth template**)
+You've been through quite a few Project Modes by now and should have some idea how to think about scoping a project, what you can accomplish in a the designated time, and what is expected of you in terms of meeting complexity requirements.
+
+The guidelines here are minimal but be sure that you:
+
+1. Use a _Rails API backend_ with a separate _React frontend_ that are created in two different Github repositories.
+2. Have at least three resources on the backend and your application must have full CRUD actions for at least one resource. 
+3. **Optional:** Your application can have authentication/authorization. You are welcome to use an auth template as discussed in class.
+
+It is highly suggested that any calls to 3rd party APIs are made _through your backend_.
+
+Example: A user clicks a button that says 'Get Gifs'
+* React makes a request to Rails
+* Rails makes a request to the Giphy Api
+* Rails receives the response from Giphy
+* React receives the response from Rails
+
+This is so you can avoid any *CORS* issues. If you are unable to hit an API from your React app due to a CORS restriction, it is very likely that it is impossible to do so. _Brief Refresher on CORS: the idea is that from one domain (the port your webpack development server is running on) you are not allowed to access another domain.  You must make the request from a server (i.e. Rails), so the request is exempt from the Same-Origin Policy restriction._
 
 
-### Setup
+### Server Setup
+```
+rails new <my-project> --api -T --database=postgresql
+```
+
+Let's go through this in detail:
+
+* `--api`
+  *  Make a [Rails 5 API](http://edgeguides.rubyonrails.org/api_app.html), basically you're telling Rails you don't want any of the stuff you wouldn't need for an application where Rails is not rendering views. Think the ActionView library (`form_for`, `link_to`, etc..), ERB, Security protections that ensure forms were rendered by the Rails app, things like that.
+* `-T`
+  * don't generate tests for this app
+* `--database=postgresql`
+  * Set this up to use a Postgres (as opposed to SQLite) database. If you ever want to push this to Heroku, Heroku requires a Postgres database. There won't be too much difference in how you have to write your code. You'll have to be sure to run `rails db:create` and make sure you have postgres running (i.e you can see the elephant)
+* Be sure to do the necessary setup for the [rack-cors-gem](https://github.com/cyu/rack-cors)
+* You may want to use [active-model-serializers](https://github.com/rails-api/active_model_serializers/tree/0-10-stable)
 
 Your apps should live in separate repositories. This means you will have two separate repos. 
 
