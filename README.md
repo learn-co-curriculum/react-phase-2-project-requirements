@@ -4,20 +4,20 @@ You've made it! You're ready to build a React application! Before you start idea
 
 ## Requirements
 
-You've been through quite a few Project Modes by now and should have some idea how to think about scoping a project, what you can accomplish in a the designated time, and what is expected of you in terms of meeting complexity requirements.
+You've been through quite a few Project Modes by now and should have some idea how to think about scoping a project, what you can accomplish in the designated time, and what is expected of you in terms of meeting complexity requirements.
 
 The guidelines here are minimal but be sure that you:
 
 1. Use a _Rails API backend_ with a separate _React frontend_ that are created in two different Github repositories.
 2. Have at least three resources on the backend and your application must have full CRUD actions for at least one resource.
-3. Must have atleast two different *client-side routes* (i.e. use react-router). Ex: even if your whole app is mostly a single page app, have the form to signup be found at `/signup`
+3. Must have at least two different *client-side routes* (i.e. use react-router). Ex: even if your whole app is mostly a single page app, have the form to signup be found at `/signup`
 3. **Optional:** Your application can have authentication/authorization. You are welcome to use an auth template as discussed in class.
 
 It is highly suggested that any calls to 3rd party APIs are made _through your backend_.
 
 Example: A user clicks a button that says 'Get Gifs'
 * React makes a request to Rails
-* Rails makes a request to the Giphy Api
+* Rails makes a request to the Giphy API
 * Rails receives the response from Giphy and sends to React
 * React receives the response from Rails and you do something with it on the client
 
@@ -45,7 +45,7 @@ To create your React project, you may use a tool called [create-react-app](https
 + `npm install -g create-react-app` - this installs the generator as a global package
 + In the directory where you'd like to create your project, `create-react-app my-project-client`. It's that simple!
 
-We'd reccommend to begin by removing any of the default stuff given to you by Create React App that you do not understand. The following are some really great resources on how to think about setting up a React project (_Spoiler: They both say the same thing, "There's no right answer!"_)
+We'd recommend to begin by removing any of the default stuff given to you by Create React App that you do not understand. The following are some really great resources on how to think about setting up a React project (_Spoiler: They both say the same thing, "There's no right answer!"_)
 * [React Docs](https://github.com/reactjs/reactjs.org/blob/71788c647daa07392a8156609fdbede8e9ed24f7/content/docs/faq-structure.md) This was written by Dan Abramov himself <3 <3 <3....
 * [The 100% Correct Way to Structure a React App (or why there’s no such thing)](https://hackernoon.com/the-100-correct-way-to-structure-a-react-app-or-why-theres-no-such-thing-3ede534ef1ed)
 
