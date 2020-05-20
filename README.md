@@ -9,7 +9,7 @@ You've been through quite a few Project Modes by now and should have some idea h
 The guidelines here are minimal but be sure that you:
 
 1. Use a _Rails API backend_ with a separate _React frontend_ that are created in two different Github repositories.
-2. Have at least three resources on the backend and your application must have full CRUD actions for at least one resource.
+2. Have at least three resources (three DB tables) on the backend and your application must have full CRUD actions for at least one resource.
 3. Must have at least two different *client-side routes* (i.e. use react-router). Ex: even if your whole app is mostly a single page app, have the form to signup be found at `/signup`
 3. **Optional:** Your application can have authentication/authorization. You are welcome to use an auth template as discussed in class.
 
