@@ -4,9 +4,17 @@ You've made it! You're ready to build a React application! Before you start idea
 
 ## Requirements
 
-You've been through quite a few Project Modes by now and should have some idea how to think about scoping a project, what you can accomplish in the designated time, and what is expected of you in terms of meeting complexity requirements.
+You've been through one Project Mode now. As you progress through the program, your projects will become more complex. This is good - it is a display of your own growth. Complexity, however, can increase the amount of time and energy you need to put into your projects. Keep this in mind from the beginning of your project.
+
+While you're ideating and designing for your project, keep in mind that the project should be scoped appropriately around the project requirements and the work involved should be doable within the designated time. Take time to read through the requirements and use them to help you prioritize tasks. There may be extra features you'd like to add to your project, but focus on completing requirements first. If you end up with extra time, you can then choose to build additional features and stretch goals
 
 The guidelines here are minimal but be sure that you:
+
+1. Build a React frontend that uses at least two different *client-side routes* (i.e. use react-router). Ex: even if your whole app is mostly a single page app, have the form to signup be found at `/signup`
+2. Use an external API to populate data or content on you frontend
+3. Set up a JSON server to persist user inputs of some kind. This could be storing posts, comments, likes, image links, etc... anything you can send in a POST request to a JSON server.
+
+**Note:** Since a JSON server must be run locally, publishing this project may result in some features not working properly. However, when we learn about backend servers, you'll be able to come back and 
 
 1. Use a _Rails API backend_ with a separate _React frontend_ that are created in two different Github repositories.
 2. Have at least three resources (three DB tables) on the backend and your application must have full CRUD actions for at least one resource.
